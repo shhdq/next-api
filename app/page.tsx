@@ -1,5 +1,9 @@
 
-
+type Post = {
+  id: number;
+  title: string;
+  body: string;
+}
 export default async function Home() {
 
   const response = await fetch('https://jsonplaceholder.typicode.com/posts') 
@@ -10,7 +14,7 @@ export default async function Home() {
       <h1>Posti</h1>
 
       <div>
-        {posts.map(post => (
+        {posts.map((post: Post) => (
 
           <div key={post.id}>
             <h2 className="text-xl font-bold mb-2">
