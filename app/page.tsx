@@ -1,5 +1,4 @@
-import Image from "next/image";
-// import { Card } from "@/components/ui/card";
+
 
 export default async function Home() {
 
